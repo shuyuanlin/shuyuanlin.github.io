@@ -1,0 +1,63 @@
+# Site settings
+title: Shuyuan Lin
+url: "http://shuyuanlin.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+baidu-analysis: a2b397dbd7421f79a8936cb9c2b93691
+#timezone: Asia/Chongqing
+description: >
+  One or more sentences introducing this blog.
+
+# Your information
+email: swin.shuyuan.lin@gmail.com
+author: Shuyuan Lin
+avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+profile: ...
+#twitter_username: twitter_username
+#github_username:  github_username
+
+profile_links:
+  Email: "mailto:swin.shuyuan.lin@gmail.com"
+  GitHub: "https://github.com/shuyuanlin"
+  # You can add more profile links above, or edit _includes/sidebar.html 
+
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+excerpt_separator: <!--more-->
+
+header:
+  links:             # Links on the header. Link to in-site page with a slash as prefix
+    About: /about/
+    Category: /category/
+
+
+permalink: /archivers/:title
+plugins:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
