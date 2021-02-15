@@ -1,11 +1,11 @@
 # Site settings
 title: Shuyuan Lin
-url: "http://shuyuanlin.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+url: "http://shuyuanlin.github.io" 
+baseurl: "" 
 baidu-analysis: a2b397dbd7421f79a8936cb9c2b93691
 #timezone: Asia/Chongqing
 description: >
-  One or more sentences introducing this blog.
+  One or more sentences introducing this webpage.
 
 # Your information
 email: swin.shuyuan.lin@gmail.com
@@ -20,7 +20,7 @@ profile_links:
   GitHub: "https://github.com/shuyuanlin"
   # You can add more profile links above, or edit _includes/sidebar.html 
 
-# Comment Service (Disqus or 多说)
+# Comment Service
 #  choose one and un-comment the line to active it
 #disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
 #duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
@@ -30,6 +30,7 @@ excerpt_separator: <!--more-->
 header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
     About: /about/
+    Publications: /publications/
     Category: /category/
 
 
