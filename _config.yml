@@ -1,11 +1,11 @@
 # Site settings
 title: Shuyuan Lin
-url: "http://shuyuanlin.github.io" 
+url: "http://www.linshuyuan.com" 
 baseurl: "" 
 baidu-analysis: a2b397dbd7421f79a8936cb9c2b93691
 #timezone: Asia/Chongqing
 description: >
-  One or more sentences introducing this webpage.
+   My personal website.
 
 # Your information
 email: swin.shuyuan.lin@gmail.com
@@ -17,7 +17,8 @@ profile: ...
 
 profile_links:
   Email: "mailto:swin.shuyuan.lin@gmail.com"
-  GitHub: "https://github.com/shuyuanlin"
+
+  URL: "http://www.linshuyuan.com"
   # You can add more profile links above, or edit _includes/sidebar.html 
 
 # Comment Service

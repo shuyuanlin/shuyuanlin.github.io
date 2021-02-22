@@ -6,40 +6,46 @@ layout: default
   <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
   <h1 class="page-heading">Recent News</h1>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        
-        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
 
-        <div class="post-excerpt">
-          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
-          {%   else %}{{ post.content | lstrip | split: "
-" | first }}{% endif %}
-          <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
-  
-  <!-- Pagination links -->
+<ul>
+{% for post in site.posts %}
+<li>
+<h3><span>{{ post.date | date: "%b %d, %Y" }}</span> »» <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+</li>
+{% endfor %}
+</ul>
+
+
+
+
+<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">&laquo; Prev</a>
   {% else %}
-    <span class="previous">PREV</span>
+    <span class="previous">&laquo; Prev</span>
   {% endif %}
-  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="page_number ">
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em>{{ page }}</em>
+      {% elsif page == 1 %}
+        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}"> 
+          {{ page }}
+        </a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: '/' | replace: '//', '/' | replace: ':num', page }}"> 
+          {{ page }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">NEXT</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next &raquo;</a>
   {% else %}
-    <span class="next ">NEXT</span>
+    <span class="next ">Next &raquo;</span>
   {% endif %}
 </div>
+
 
 </div>
