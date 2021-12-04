@@ -1,0 +1,64 @@
+# Site settings
+title: Shuyuan Lin
+url: "#" 
+baseurl: "" 
+baidu-analysis: a2b397dbd7421f79a8936cb9c2b93691
+#timezone: Asia/Chongqing
+description: >
+   My personal website.
+
+# Your information
+email: 
+author: Shuyuan Lin
+avatar: "/lsy.jpg"
+profile: ...
+#twitter_username: twitter_username
+#github_username:  github_username
+
+profile_links:
+
+
+  # You can add more profile links above, or edit _includes/sidebar.html 
+
+# Comment Service
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+excerpt_separator: <!--more-->
+
+header:
+  links:             # Links on the header. Link to in-site page with a slash as prefix
+    About Me: /about/
+    Publications: /publications/
+    Category: /category/
+
+
+permalink: /archivers/:title
+plugins:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
