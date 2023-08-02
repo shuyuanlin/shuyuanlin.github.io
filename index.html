@@ -1,51 +1,9 @@
----
-layout: default
----
-
-<div class="home">
-  <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-  <h1 class="page-heading">Recent News</h1>
-
-
-<ul>
-{% for post in site.posts %}
-<li>
-<h3><span>{{ post.date | date: "%b %d, %Y" }}</span>  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-</li>
-{% endfor %}
-</ul>
-
-
-
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">&laquo; Prev</a>
-  {% else %}
-    <span class="previous">&laquo; Prev</span>
-  {% endif %}
-  <span class="page_number ">
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% elsif page == 1 %}
-        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}"> 
-          {{ page }}
-        </a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: '/' | replace: '//', '/' | replace: ':num', page }}"> 
-          {{ page }}
-        </a>
-      {% endif %}
-    {% endfor %}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next &raquo;</a>
-  {% else %}
-    <span class="next ">Next &raquo;</span>
-  {% endif %}
-</div>
-
-
-</div>
+<!DOCTYPE html>
+<html>
+<script>
+    window.location.href="https://faculty.jnu.edu.cn/xxkxjsxy/lsy2/";
+</script>
+ 
+<body>
+</body>
+</html>
