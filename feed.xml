@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shuyuan Lin</title>
+    <description>My personal website.
+</description>
+    <link>http://0.0.0.0:8080/</link>
+    <atom:link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>03 May 2024</pubDate>
+    <lastBuildDate>03 May 2024</lastBuildDate>
+    <generator></generator>
+    
+      <item>
+        <title>Coming soon</title>
+        <description>&lt;p&gt;Coming soon…&lt;/p&gt;
+</description>
+        <pubDate>04 April 2024</pubDate>
+        <link>http://0.0.0.0:8080/archivers/Coming soon</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/archivers/Coming soon</guid>
+        
+        
+        <category>News</category>
+        
+      </item>
+    
+  </channel>
+</rss>
